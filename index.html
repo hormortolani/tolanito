@@ -104,6 +104,37 @@
         <!-- Work -->
         <article id="work">
           <h2 class="major">Project</h2>
+
+          <h3>Realtime-SQL-Demo-with-PowerBI-Dashboard: Project Overview</h3>
+          <span class="image main"><img src="images/Screenshot 2023-11-12 210746.png" alt="" /></span>
+          <p>
+            1. Several variables were declared for the following columns:
+            @pid INT = 0;: This line declares a variable @pid as an integer type and initializes it to 0.
+            @units INT = 0;: This line declares a variable @units as an integer type and initializes it to 0.
+            @price MONEY = 0;: This line declares a variable @price as a money type (representing currency)
+             and initializes it to 0.<br />
+            2.  I create a loop using the construct. This construct creates an infinite loop since the condition 1=1 is always true<br />
+            3. Inside the loop, random values are generated for @pid, @units, and @price.
+            SET @pid = ROUND(RAND()*3, 0)+1;: Generates a random number between 1 and 3 (inclusive).
+            SET @units = ROUND(RAND()*10, 0)+1;: Generates a random number between 1 and 10 (inclusive).
+            Price calculation is based on the randomly generated @pid.
+            If @pid is 1, price is calculated as 10.10 times @units.
+            If @pid is 2, price is calculated as 6.00 times @units.
+            If @pid is 3, price is calculated as 9.2 times @units.<br />
+            4. INSERT INTO Project_Demo_Table VALUES (GETDATE(), @pid, @units, @price);: Inserts a new row into the Project_Demo_Table with the current date and time, along with the values of @pid, @units, and @price generated in the loop.
+            <br />
+            5. After the loop completes, another SELECT statement is used to display all
+             data from the Project_Demo_Table. This will show the populated table with the simulated data.
+            Tools and Technologies: MySQL, Python, Pandas, Matplotlib
+              <br>
+            6. The data was  loaded into Power BI to create visualizations such as charts, graphs, and tables based on the data from Project_Demo_Table. Power BI will automatically refresh the data according to your refresh settings,
+             providing live visualization as new data is inserted into the table
+            Data Analysis Techniques: Data Extraction, Optimization, Calculation, Data Visualization
+            <a
+              href=https://github.com/hormortolani/Realtime-SQL-Demo-with-PowerBI-Dashboard-
+              >View more......</a>
+          </p>
+
           <h3>HR Request to Data Analysis Team: Project Overview</h3>
           <span class="image main"><img src="images/down1.png" alt="" /></span>
           <p>
@@ -238,7 +269,7 @@
             Experienced in collaborating with diverse teams and committed to
             continuous learning and professional development.
           </p>
-          <a href="data analyst resume.pdf" download>Download My Resume</a>
+          <a href="v.pdf" download>Download My Resume</a>
         </article>
 
         <!-- Contact -->
